@@ -1,6 +1,6 @@
 [package]
 name = "pitwall"
-version = "0.1.0"
+version = "0.1.1"
 description = "Formula 1 timing and telemetry explorer built on FastF1"
 license = "AGPL-3.0-or-later"
 edition = "2021"
