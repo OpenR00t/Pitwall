@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 // Copyright (C) 2026 The Pitwall contributors
 import * as api from "./lib/api.js";
+import { checkForUpdate } from "./lib/update.js";
 import { C, esc, h, readable } from "./lib/format.js";
 import * as overview from "./views/overview.js";
 import * as laps from "./views/laps.js";
@@ -365,12 +366,15 @@ async function start() {
   $("#view").replaceChildren(h(`<div class="empty"><div class="loading"><div class="row">
     <div class="spinner"></div><span>Starting the data service…</span></div></div></div>`));
   const info = await api.init();
+  checkForUpdate();   // also when the backend failed: a newer release may fix it
   if (info.error) {
+    // installed copies carry their own backend; the Python hint is for running from source
+    const fromSource = /Python|pip install/.test(info.error);
     $("#view").replaceChildren(h(`<div class="empty"><div class="welcome"><h1>The data service didn't start</h1>
       <p class="note error">${esc(info.error)}</p>
-      <p class="note">Pitwall needs Python 3.10+ with FastF1 installed:
+      ${fromSource ? `<p class="note">Running from source, Pitwall needs Python 3.10+ with FastF1 installed:
       <b>pip install -r backend/requirements.txt</b>. If Python isn't on your PATH as <b>python</b>,
-      set <b>PITWALL_PYTHON</b> to its full path.</p></div></div>`));
+      set <b>PITWALL_PYTHON</b> to its full path.</p>` : ""}</div></div>`));
     return;
   }
   try {

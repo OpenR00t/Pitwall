@@ -68,7 +68,7 @@ aside.side { background: var(--bg-h); border-right: 1px solid var(--bg1); displa
 select, input[type=text], input[type=password], input[type=number] {
   background: var(--bg-h); border: 1px solid var(--bg3); border-radius: 4px; padding: 5px 8px;
   outline: none; }
-.side select { background: var(--bg0); }
+.side select { background-color: var(--bg0); }
 select:focus, input:focus { border-color: var(--accent); }
 .events { max-height: 230px; overflow: auto; margin: 0 -6px; }
 .event { display: grid; grid-template-columns: 26px 1fr auto; gap: 6px; align-items: center;
@@ -243,3 +243,18 @@ nav.tabs .sep { width: 1px; background: var(--bg2); margin: 9px 10px; }
 .guide .example .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em;
   text-transform: uppercase; color: var(--accent-2); margin-bottom: 4px; }
 @media (max-width: 1250px) { .guide-body { grid-template-columns: 1fr; } }
+
+/* update prompt */
+.update-toast { position: fixed; right: 18px; bottom: 18px; z-index: 50; width: 360px; max-width: calc(100vw - 36px);
+  border: 1px solid var(--green-d); box-shadow: 0 6px 24px rgba(0, 0, 0, .45); font-size: 13px; }
+.update-toast .notes { margin-top: 6px; white-space: pre-line; font-size: 12px; max-height: 120px; overflow: auto; }
+
+/* Linux draws form controls and scrollbars with the desktop theme unless told
+   not to: keep selects and the tab strip in the app's colours */
+select { -webkit-appearance: none; appearance: none; background-color: var(--bg-h);
+  background-image: linear-gradient(45deg, transparent 50%, var(--fg4) 50%), linear-gradient(135deg, var(--fg4) 50%, transparent 50%);
+  background-position: calc(100% - 14px) 50%, calc(100% - 9px) 50%; background-size: 5px 5px; background-repeat: no-repeat;
+  padding-right: 26px; }
+select option { background: var(--bg0); color: var(--fg1); }
+nav.tabs { scrollbar-width: none; }
+nav.tabs::-webkit-scrollbar { display: none; }

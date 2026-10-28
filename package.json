@@ -1,0 +1,11 @@
+{
+  "name": "pitwall",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}

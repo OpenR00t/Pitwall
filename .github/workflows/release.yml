@@ -1,0 +1,86 @@
+# Builds the Windows and Linux installers when a version tag is pushed
+# (git tag v0.2.0 && git push origin v0.2.0) and puts them, with the files the
+# in-app updater reads, on a draft GitHub release. Publishing the draft is
+# what makes installed copies offer the update.
+#
+# Needs, in the repository's Settings > Secrets and variables > Actions:
+#   secret   TAURI_SIGNING_PRIVATE_KEY           the private updater key
+#   secret   TAURI_SIGNING_PRIVATE_KEY_PASSWORD  its password (if it has one)
+#   variable TAURI_UPDATER_PUBKEY                the public updater key
+
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  build:
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [windows-latest, ubuntu-22.04]
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Version matches the tag
+        run: python scripts/set_version.py --check ${{ github.ref_name }}
+
+      - name: Linux build packages
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build the bundled backend
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt pyinstaller
+          python backend/build_frozen.py
+
+      - name: Test the bundled backend starts
+        shell: bash
+        run: python scripts/smoke_frozen.py
+
+      - name: Release settings
+        shell: bash
+        env:
+          PUBKEY: ${{ vars.TAURI_UPDATER_PUBKEY }}
+        run: |
+          if [ -z "$PUBKEY" ]; then echo "Set the TAURI_UPDATER_PUBKEY variable first"; exit 1; fi
+          python scripts/release_config.py --repo "${{ github.repository }}" --pubkey "$PUBKEY"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri -> target
+
+      - run: npm install
+
+      - uses: tauri-apps/tauri-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: Pitwall ${{ github.ref_name }}
+          releaseBody: |
+            Windows: download the `-setup.exe`. Linux: the `.AppImage` (updates itself) or the `.deb`.
+            Installed copies offer this update when they next start.
+          releaseDraft: true
+          prerelease: false
+          updaterJsonPreferNsis: true
+          args: --config src-tauri/tauri.release.conf.json

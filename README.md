@@ -34,7 +34,22 @@ resulting access token on your computer, and **Sign out** deletes it.
 Without an account, **Demo** in the season list loads an invented race weekend so you
 can try every view.
 
-## Running it
+## Installing
+
+Download the latest release from this repository's **Releases** page:
+
+- **Windows:** `Pitwall_<version>_x64-setup.exe`. It installs for your user only (no admin
+  rights). Windows SmartScreen may warn about an unknown publisher the first time, because
+  the installer isn't code-signed: choose *More info*, then *Run anyway*.
+- **Linux:** `Pitwall_<version>_amd64.AppImage` (make it executable and run it) or the
+  `.deb` package.
+
+Everything is included; no Python needed. When a new release is out, Pitwall offers it when
+it starts (*Install and restart* or *Later*). Updates are checked against the project's
+signing key before they're installed. The AppImage updates itself; the `.deb` is updated
+by installing the new package.
+
+## Running from source
 
 You need Python 3.10 or newer and Rust (for building the window).
 
@@ -53,9 +68,8 @@ The app finds a `.venv` in the project folder by itself. To use another Python, 
 `PITWALL_PYTHON` to its path. The built program is
 `src-tauri/target/release/pitwall(.exe)` and can be started directly from there.
 
-An installer can be made with the Tauri CLI (`cargo install tauri-cli`, then
-`cargo tauri build`). The installed app still needs Python with the requirements
-installed, found on `PATH` or through `PITWALL_PYTHON`.
+Running from source, the app always uses Python and the source folder, never a bundled
+backend, so backend edits take effect on the next start.
 
 ### Where data is kept
 
@@ -68,7 +82,8 @@ session you open; it is safe to delete at any time.
 ```
 backend/pitwall_backend   Python: loads sessions with FastF1, runs the analysis, serves JSON
 ui/                       The interface: plain HTML, CSS and JavaScript, charts by uPlot
-src-tauri/                The desktop window; starts the backend and stops it on exit
+src-tauri/                The desktop window; starts the backend, stops it on exit, installs updates
+scripts/                  Release helpers: version number, release settings, bundled-backend check
 ```
 
 The backend listens on `127.0.0.1` only, on a free port, and every request needs a
@@ -84,6 +99,41 @@ cd ui
 python -m http.server 8080
 # open http://127.0.0.1:8080/?api=http://127.0.0.1:8765&token=devtoken
 ```
+
+## Releases
+
+Releases are built by GitHub Actions (`.github/workflows/release.yml`) when a version tag is
+pushed: the backend is bundled with PyInstaller (`backend/build_frozen.py`) and checked to
+start (`scripts/smoke_frozen.py`), then the Windows installer and the Linux AppImage and
+`.deb` are built, signed for the updater, and put on a **draft** release with the
+`latest.json` file the app reads. Nothing reaches users until the draft is published.
+
+To release a new version:
+
+```
+python scripts/set_version.py 0.2.0      # writes it in tauri.conf.json, Cargo.toml and the backend
+git commit -am "Release 0.2.0"
+git tag v0.2.0
+git push origin main v0.2.0
+```
+
+When the workflow finishes, open the draft release, write the notes (installed copies show
+them in the update prompt), and publish it.
+
+One-time setup, before the first release:
+
+1. Make the updater signing key (keep the private key and its password safe and out of the
+   repository; without them no further updates can be signed):
+   `npx @tauri-apps/cli signer generate -w ~/.tauri/pitwall.key`
+2. In the repository's *Settings → Secrets and variables → Actions*, add the secrets
+   `TAURI_SIGNING_PRIVATE_KEY` (contents of `pitwall.key`) and
+   `TAURI_SIGNING_PRIVATE_KEY_PASSWORD`, and the variable `TAURI_UPDATER_PUBKEY` (contents of
+   `pitwall.key.pub`).
+
+The update address and the public key are filled in by the workflow from the repository
+it runs in (`scripts/release_config.py`), so forks release under their own key.
+`.github/workflows/ci.yml` runs the unit and demo tests on Windows and Linux, checks the
+interface scripts parse and the window compiles, on every push.
 
 ## Tests
 
