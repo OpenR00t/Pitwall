@@ -1,0 +1,25 @@
+[package]
+name = "pitwall"
+version = "0.1.0"
+description = "Formula 1 timing and telemetry explorer built on FastF1"
+license = "AGPL-3.0-or-later"
+edition = "2021"
+rust-version = "1.77"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+panic = "abort"
+strip = true

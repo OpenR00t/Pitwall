@@ -1,0 +1,2535 @@
+{
+ "2024-08-Practice 1": {
+  "compare_track_gap_m": 4,
+  "corners": {
+   "classes": {
+    "fast": 2,
+    "medium": 3,
+    "slow": 8
+   },
+   "kept": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "8",
+    "9",
+    "11",
+    "12",
+    "16",
+    "18",
+    "19"
+   ],
+   "linked": [
+    "7",
+    "10",
+    "13",
+    "14",
+    "15",
+    "17"
+   ],
+   "outlier_cells": 3,
+   "rank": {
+    "fast": [
+     "Kick Sauber",
+     "Mercedes",
+     "McLaren"
+    ],
+    "medium": [
+     "McLaren",
+     "RB",
+     "Red Bull Racing"
+    ],
+    "slow": [
+     "Ferrari",
+     "McLaren",
+     "Mercedes"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": true,
+  "engines": {
+   "Ferrari": [
+    "Ferrari",
+    "Haas F1 Team",
+    "Kick Sauber"
+   ],
+   "Honda RBPT": [
+    "RB",
+    "Red Bull Racing"
+   ],
+   "Mercedes": [
+    "Aston Martin",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Renault": [
+    "Alpine"
+   ]
+  },
+  "event": "Monaco Grand Prix",
+  "lap_notes": {},
+  "line_speed_p90": 4.2,
+  "long_runs": {
+   "basis": "stint",
+   "pace_order": [
+    "Ferrari",
+    "RB",
+    "Haas F1 Team",
+    "McLaren",
+    "Williams"
+   ],
+   "stints": 20
+  },
+  "minisector_sum_error": 0.0,
+  "order": [
+   "HAM",
+   "PIA",
+   "RUS",
+   "NOR",
+   "LEC"
+  ],
+  "straights": {
+   "clipping_relevant": false,
+   "flat": {
+    "Alpine": 0.0,
+    "Aston Martin": 0.0,
+    "Ferrari": 0.0,
+    "Haas F1 Team": 0.0,
+    "Kick Sauber": 0.0,
+    "McLaren": 0.0,
+    "Mercedes": 0.0,
+    "RB": 0.0,
+    "Red Bull Racing": 0.0,
+    "Williams": 0.0
+   },
+   "longest": 532,
+   "top": {
+    "Alpine": 281.0,
+    "Aston Martin": 284.0,
+    "Ferrari": 285.0,
+    "Haas F1 Team": 288.0,
+    "Kick Sauber": 287.0,
+    "McLaren": 286.0,
+    "Mercedes": 288.0,
+    "RB": 281.0,
+    "Red Bull Racing": 286.0,
+    "Williams": 282.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2024-08-Practice 2": {
+  "compare_track_gap_m": 6,
+  "corners": {
+   "classes": {
+    "fast": 2,
+    "medium": 4,
+    "slow": 7
+   },
+   "kept": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "8",
+    "9",
+    "11",
+    "12",
+    "16",
+    "18",
+    "19"
+   ],
+   "linked": [
+    "7",
+    "10",
+    "13",
+    "14",
+    "15",
+    "17"
+   ],
+   "outlier_cells": 5,
+   "rank": {
+    "fast": [
+     "Aston Martin",
+     "Haas F1 Team",
+     "Williams"
+    ],
+    "medium": [
+     "RB",
+     "Red Bull Racing",
+     "McLaren"
+    ],
+    "slow": [
+     "Williams",
+     "Aston Martin",
+     "Ferrari"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": true,
+  "engines": {
+   "Ferrari": [
+    "Ferrari",
+    "Haas F1 Team",
+    "Kick Sauber"
+   ],
+   "Honda RBPT": [
+    "RB",
+    "Red Bull Racing"
+   ],
+   "Mercedes": [
+    "Aston Martin",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Renault": [
+    "Alpine"
+   ]
+  },
+  "event": "Monaco Grand Prix",
+  "lap_notes": {},
+  "line_speed_p90": 3.9,
+  "long_runs": {
+   "basis": "stint",
+   "pace_order": [
+    "Ferrari",
+    "Aston Martin",
+    "Alpine",
+    "Kick Sauber",
+    "Haas F1 Team"
+   ],
+   "stints": 25
+  },
+  "minisector_sum_error": 0.0,
+  "order": [
+   "LEC",
+   "HAM",
+   "ALO",
+   "VER",
+   "NOR"
+  ],
+  "straights": {
+   "clipping_relevant": false,
+   "flat": {
+    "Alpine": 0.0,
+    "Aston Martin": 20.0,
+    "Ferrari": 0.0,
+    "Haas F1 Team": 0.0,
+    "Kick Sauber": 0.0,
+    "McLaren": 30.0,
+    "Mercedes": 30.0,
+    "RB": 0.0,
+    "Red Bull Racing": 20.0,
+    "Williams": 10.0
+   },
+   "longest": 539,
+   "top": {
+    "Alpine": 283.0,
+    "Aston Martin": 287.0,
+    "Ferrari": 288.0,
+    "Haas F1 Team": 290.0,
+    "Kick Sauber": 283.0,
+    "McLaren": 286.0,
+    "Mercedes": 287.0,
+    "RB": 282.0,
+    "Red Bull Racing": 283.0,
+    "Williams": 287.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2024-08-Practice 3": {
+  "compare_track_gap_m": 6,
+  "corners": {
+   "classes": {
+    "fast": 2,
+    "medium": 3,
+    "slow": 8
+   },
+   "kept": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "8",
+    "9",
+    "11",
+    "12",
+    "16",
+    "18",
+    "19"
+   ],
+   "linked": [
+    "7",
+    "10",
+    "13",
+    "14",
+    "15",
+    "17"
+   ],
+   "outlier_cells": 4,
+   "rank": {
+    "fast": [
+     "Haas F1 Team",
+     "Mercedes",
+     "Red Bull Racing"
+    ],
+    "medium": [
+     "Alpine",
+     "McLaren",
+     "Red Bull Racing"
+    ],
+    "slow": [
+     "McLaren",
+     "Alpine",
+     "Ferrari"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": true,
+  "engines": {
+   "Ferrari": [
+    "Ferrari",
+    "Haas F1 Team",
+    "Kick Sauber"
+   ],
+   "Honda RBPT": [
+    "RB",
+    "Red Bull Racing"
+   ],
+   "Mercedes": [
+    "Aston Martin",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Renault": [
+    "Alpine"
+   ]
+  },
+  "event": "Monaco Grand Prix",
+  "lap_notes": {
+   "BOT": "lap 1 not a racing lap; left out"
+  },
+  "line_speed_p90": 3.9,
+  "long_runs": {
+   "basis": "stint",
+   "pace_order": [
+    "Mercedes",
+    "Ferrari",
+    "Aston Martin",
+    "Red Bull Racing",
+    "Kick Sauber"
+   ],
+   "stints": 5
+  },
+  "minisector_sum_error": 0.0,
+  "order": [
+   "LEC",
+   "VER",
+   "HAM",
+   "PIA",
+   "PER"
+  ],
+  "straights": {
+   "clipping_relevant": false,
+   "flat": {
+    "Alpine": 0.0,
+    "Aston Martin": 0.0,
+    "Ferrari": 0.0,
+    "Haas F1 Team": 0.0,
+    "Kick Sauber": 0.0,
+    "McLaren": 0.0,
+    "Mercedes": 0.0,
+    "RB": 30.0,
+    "Red Bull Racing": 0.0,
+    "Williams": 0.0
+   },
+   "longest": 530,
+   "top": {
+    "Alpine": 285.0,
+    "Aston Martin": 289.0,
+    "Ferrari": 288.0,
+    "Haas F1 Team": 290.0,
+    "Kick Sauber": 286.0,
+    "McLaren": 288.0,
+    "Mercedes": 288.0,
+    "RB": 284.0,
+    "Red Bull Racing": 290.0,
+    "Williams": 287.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2024-08-Qualifying": {
+  "compare_track_gap_m": 4,
+  "corners": {
+   "classes": {
+    "fast": 2,
+    "medium": 4,
+    "slow": 7
+   },
+   "kept": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "8",
+    "9",
+    "11",
+    "12",
+    "16",
+    "18",
+    "19"
+   ],
+   "linked": [
+    "7",
+    "10",
+    "13",
+    "14",
+    "15",
+    "17"
+   ],
+   "outlier_cells": 1,
+   "rank": {
+    "fast": [
+     "Haas F1 Team",
+     "Mercedes",
+     "Red Bull Racing"
+    ],
+    "medium": [
+     "McLaren",
+     "Red Bull Racing",
+     "Mercedes"
+    ],
+    "slow": [
+     "McLaren",
+     "Alpine",
+     "Williams"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": true,
+  "engines": {
+   "Ferrari": [
+    "Ferrari",
+    "Haas F1 Team",
+    "Kick Sauber"
+   ],
+   "Honda RBPT": [
+    "RB",
+    "Red Bull Racing"
+   ],
+   "Mercedes": [
+    "Aston Martin",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Renault": [
+    "Alpine"
+   ]
+  },
+  "event": "Monaco Grand Prix",
+  "lap_notes": {
+   "ALB": "lap 28 no telemetry; lap 21 used"
+  },
+  "line_speed_p90": 2.3,
+  "long_runs": {
+   "basis": "stint",
+   "pace_order": [
+    "Red Bull Racing"
+   ],
+   "stints": 1
+  },
+  "minisector_sum_error": 0.0,
+  "order": [
+   "LEC",
+   "PIA",
+   "SAI",
+   "NOR",
+   "RUS"
+  ],
+  "quali_gaps": {
+   "Alpine": 0.891,
+   "Aston Martin": 1.84,
+   "Ferrari": 0.0,
+   "Haas F1 Team": 1.665,
+   "Kick Sauber": 3.191,
+   "McLaren": 0.219,
+   "Mercedes": 0.389,
+   "RB": 0.837,
+   "Red Bull Racing": 0.423,
+   "Williams": 0.965
+  },
+  "straights": {
+   "clipping_relevant": false,
+   "flat": {
+    "Alpine": 0.0,
+    "Aston Martin": 0.0,
+    "Ferrari": 0.0,
+    "Haas F1 Team": 0.0,
+    "Kick Sauber": 0.0,
+    "McLaren": 20.0,
+    "Mercedes": 0.0,
+    "RB": 0.0,
+    "Red Bull Racing": 0.0,
+    "Williams": 0.0
+   },
+   "longest": 538,
+   "top": {
+    "Alpine": 287.0,
+    "Aston Martin": 291.0,
+    "Ferrari": 289.0,
+    "Haas F1 Team": 292.0,
+    "Kick Sauber": 288.0,
+    "McLaren": 287.0,
+    "Mercedes": 290.0,
+    "RB": 285.0,
+    "Red Bull Racing": 288.0,
+    "Williams": 288.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2024-08-Race": {
+  "compare_track_gap_m": 4,
+  "corners": {
+   "classes": {
+    "fast": 2,
+    "medium": 3,
+    "slow": 8
+   },
+   "kept": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "8",
+    "9",
+    "11",
+    "12",
+    "16",
+    "18",
+    "19"
+   ],
+   "linked": [
+    "7",
+    "10",
+    "13",
+    "14",
+    "15",
+    "17"
+   ],
+   "outlier_cells": 8,
+   "rank": {
+    "fast": [
+     "Mercedes",
+     "Kick Sauber",
+     "Alpine"
+    ],
+    "medium": [
+     "Red Bull Racing",
+     "Ferrari",
+     "RB"
+    ],
+    "slow": [
+     "RB",
+     "Mercedes",
+     "Ferrari"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Ferrari": [
+    "Ferrari",
+    "Kick Sauber"
+   ],
+   "Honda RBPT": [
+    "RB",
+    "Red Bull Racing"
+   ],
+   "Mercedes": [
+    "Aston Martin",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Renault": [
+    "Alpine"
+   ]
+  },
+  "event": "Monaco Grand Prix",
+  "lap_notes": {},
+  "line_speed_p90": 1.8,
+  "long_runs": {
+   "basis": "race",
+   "pace_order": [
+    "Mercedes",
+    "Red Bull Racing",
+    "Ferrari",
+    "McLaren",
+    "Williams"
+   ],
+   "stints": 21
+  },
+  "minisector_sum_error": 0.0,
+  "order": [
+   "LEC",
+   "PIA",
+   "SAI",
+   "NOR",
+   "RUS"
+  ],
+  "straights": {
+   "clipping_relevant": false,
+   "flat": {
+    "Alpine": 40.0,
+    "Aston Martin": 0.0,
+    "Ferrari": 0.0,
+    "Kick Sauber": 0.0,
+    "McLaren": 0.0,
+    "Mercedes": 0.0,
+    "RB": 0.0,
+    "Red Bull Racing": 0.0,
+    "Williams": 0.0
+   },
+   "longest": 491,
+   "top": {
+    "Alpine": 277.0,
+    "Aston Martin": 279.0,
+    "Ferrari": 279.0,
+    "Kick Sauber": 281.0,
+    "McLaren": 281.0,
+    "Mercedes": 276.0,
+    "RB": 274.0,
+    "Red Bull Racing": 265.0,
+    "Williams": 281.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2026-13-Qualifying": {
+  "compare_track_gap_m": 12,
+  "corners": {
+   "classes": {
+    "fast": 2,
+    "medium": 3,
+    "slow": 2
+   },
+   "kept": [
+    "2",
+    "3",
+    "4",
+    "6",
+    "7",
+    "8",
+    "11"
+   ],
+   "linked": [
+    "1",
+    "5",
+    "9",
+    "10"
+   ],
+   "outlier_cells": 0,
+   "rank": {
+    "fast": [
+     "Alpine",
+     "Audi",
+     "McLaren"
+    ],
+    "medium": [
+     "Mercedes",
+     "Ferrari",
+     "McLaren"
+    ],
+    "slow": [
+     "Red Bull Racing",
+     "Alpine",
+     "Audi"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "Italian Grand Prix",
+  "lap_notes": {
+   "ALB": "lap 2 measures the wrong length; left out",
+   "SAI": "lap 14 measures the wrong length; lap 11 used"
+  },
+  "line_speed_p90": 0.9,
+  "minisector_sum_error": 0.0,
+  "order": [
+   "GAS",
+   "RUS",
+   "PIA",
+   "LEC",
+   "HAM"
+  ],
+  "quali_gaps": {
+   "Alpine": 0.0,
+   "Aston Martin": 4.113,
+   "Audi": 0.894,
+   "Cadillac": 3.152,
+   "Ferrari": 0.267,
+   "Haas F1 Team": 1.186,
+   "McLaren": 0.22,
+   "Mercedes": 0.073,
+   "Racing Bulls": 0.611,
+   "Red Bull Racing": 0.347,
+   "Williams": 2.038
+  },
+  "straights": {
+   "clipping_relevant": true,
+   "flat": {
+    "Alpine": 340.0,
+    "Aston Martin": 450.0,
+    "Audi": 430.0,
+    "Cadillac": 350.0,
+    "Ferrari": 430.0,
+    "Haas F1 Team": 370.0,
+    "McLaren": 460.0,
+    "Mercedes": 210.0,
+    "Racing Bulls": 470.0,
+    "Red Bull Racing": 420.0,
+    "Williams": 440.0
+   },
+   "longest": 1370,
+   "top": {
+    "Alpine": 342.0,
+    "Aston Martin": 319.0,
+    "Audi": 336.0,
+    "Cadillac": 337.0,
+    "Ferrari": 338.0,
+    "Haas F1 Team": 337.0,
+    "McLaren": 334.0,
+    "Mercedes": 343.0,
+    "Racing Bulls": 332.0,
+    "Red Bull Racing": 334.0,
+    "Williams": 334.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2026-13-Race": {
+  "compare_track_gap_m": 6,
+  "corners": {
+   "classes": {
+    "fast": 0,
+    "medium": 4,
+    "slow": 2
+   },
+   "kept": [
+    "2",
+    "4",
+    "6",
+    "7",
+    "8",
+    "11"
+   ],
+   "linked": [
+    "1",
+    "3",
+    "5",
+    "9",
+    "10"
+   ],
+   "outlier_cells": 0,
+   "rank": {
+    "medium": [
+     "Mercedes",
+     "Audi",
+     "Ferrari"
+    ],
+    "slow": [
+     "Alpine",
+     "Mercedes",
+     "Audi"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "Italian Grand Prix",
+  "lap_notes": {
+   "COL": "lap 53 measures the wrong length; lap 38 used",
+   "LEC": "lap 1 not a racing lap; left out",
+   "SAI": "lap 46 measures the wrong length; lap 49 used"
+  },
+  "line_speed_p90": 1.5,
+  "long_runs": {
+   "basis": "race",
+   "pace_order": [
+    "Mercedes",
+    "Red Bull Racing",
+    "McLaren",
+    "Ferrari",
+    "Alpine"
+   ],
+   "stints": 30
+  },
+  "minisector_sum_error": 0.0,
+  "order": [
+   "ANT",
+   "RUS",
+   "VER",
+   "NOR",
+   "PIA"
+  ],
+  "straights": {
+   "clipping_relevant": true,
+   "flat": {
+    "Alpine": 560.0,
+    "Aston Martin": 590.0,
+    "Audi": 340.0,
+    "Cadillac": 570.0,
+    "Ferrari": 510.0,
+    "Haas F1 Team": 460.0,
+    "McLaren": 430.0,
+    "Mercedes": 440.0,
+    "Racing Bulls": 550.0,
+    "Red Bull Racing": 160.0,
+    "Williams": 400.0
+   },
+   "longest": 1480,
+   "top": {
+    "Alpine": 317.0,
+    "Aston Martin": 302.0,
+    "Audi": 313.0,
+    "Cadillac": 312.0,
+    "Ferrari": 317.0,
+    "Haas F1 Team": 316.5,
+    "McLaren": 322.0,
+    "Mercedes": 318.0,
+    "Racing Bulls": 315.0,
+    "Red Bull Racing": 316.0,
+    "Williams": 320.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2026-14-Qualifying": {
+  "compare_track_gap_m": 4,
+  "corners": {
+   "classes": {
+    "fast": 0,
+    "medium": 3,
+    "slow": 6
+   },
+   "kept": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "linked": [],
+   "outlier_cells": 0,
+   "rank": {
+    "medium": [
+     "Ferrari",
+     "McLaren",
+     "Red Bull Racing"
+    ],
+    "slow": [
+     "Ferrari",
+     "Mercedes",
+     "McLaren"
+    ]
+   }
+  },
+  "corners_estimated": true,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "Spanish Grand Prix",
+  "lap_notes": {
+   "STR": "lap 2 not a racing lap; left out"
+  },
+  "line_speed_p90": 2.7,
+  "minisector_sum_error": 0.0,
+  "order": [
+   "NOR",
+   "ANT",
+   "VER",
+   "HAM",
+   "LEC"
+  ],
+  "quali_gaps": {
+   "Alpine": 1.175,
+   "Aston Martin": 3.881,
+   "Audi": 1.524,
+   "Cadillac": 4.453,
+   "Ferrari": 0.206,
+   "Haas F1 Team": 2.007,
+   "McLaren": 0.0,
+   "Mercedes": 0.012,
+   "Racing Bulls": 1.325,
+   "Red Bull Racing": 0.152,
+   "Williams": 3.793
+  },
+  "straights": {
+   "clipping_relevant": true,
+   "flat": {
+    "Alpine": 340.0,
+    "Aston Martin": 310.0,
+    "Audi": 250.0,
+    "Cadillac": 270.0,
+    "Ferrari": 250.0,
+    "Haas F1 Team": 210.0,
+    "McLaren": 260.0,
+    "Mercedes": 340.0,
+    "Racing Bulls": 280.0,
+    "Red Bull Racing": 310.0,
+    "Williams": 340.0
+   },
+   "longest": 874,
+   "top": {
+    "Alpine": 328.0,
+    "Aston Martin": 325.0,
+    "Audi": 337.0,
+    "Cadillac": 325.0,
+    "Ferrari": 335.0,
+    "Haas F1 Team": 334.0,
+    "McLaren": 335.0,
+    "Mercedes": 327.0,
+    "Racing Bulls": 329.0,
+    "Red Bull Racing": 330.0,
+    "Williams": 324.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2026-15-Qualifying": {
+  "compare_track_gap_m": 4,
+  "corners": {
+   "classes": {
+    "fast": 3,
+    "medium": 0,
+    "slow": 12
+   },
+   "kept": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "9",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "20"
+   ],
+   "linked": [
+    "8",
+    "10",
+    "17",
+    "18",
+    "19"
+   ],
+   "outlier_cells": 2,
+   "rank": {
+    "fast": [
+     "Alpine",
+     "Williams",
+     "McLaren"
+    ],
+    "slow": [
+     "Mercedes",
+     "Ferrari",
+     "McLaren"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "Azerbaijan Grand Prix",
+  "lap_notes": {},
+  "line_speed_p90": 1.0,
+  "minisector_sum_error": 0.0,
+  "order": [
+   "RUS",
+   "LEC",
+   "PIA",
+   "HAD",
+   "NOR"
+  ],
+  "quali_gaps": {
+   "Alpine": 1.484,
+   "Aston Martin": 3.967,
+   "Audi": 3.192,
+   "Cadillac": 4.03,
+   "Ferrari": 0.816,
+   "Haas F1 Team": 2.194,
+   "McLaren": 0.817,
+   "Mercedes": 0.0,
+   "Racing Bulls": 2.276,
+   "Red Bull Racing": 0.95,
+   "Williams": 1.99
+  },
+  "straights": {
+   "clipping_relevant": true,
+   "flat": {
+    "Alpine": 960.0,
+    "Aston Martin": 1060.0,
+    "Audi": 1040.0,
+    "Cadillac": 910.0,
+    "Ferrari": 1010.0,
+    "Haas F1 Team": 910.0,
+    "McLaren": 970.0,
+    "Mercedes": 950.0,
+    "Racing Bulls": 990.0,
+    "Red Bull Racing": 930.0,
+    "Williams": 890.0
+   },
+   "longest": 2022,
+   "top": {
+    "Alpine": 328.0,
+    "Aston Martin": 321.0,
+    "Audi": 322.0,
+    "Cadillac": 325.0,
+    "Ferrari": 327.0,
+    "Haas F1 Team": 323.0,
+    "McLaren": 326.0,
+    "Mercedes": 331.0,
+    "Racing Bulls": 326.0,
+    "Red Bull Racing": 322.0,
+    "Williams": 328.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2026-15-Race": {
+  "compare_track_gap_m": 4,
+  "corners": {
+   "classes": {
+    "fast": 2,
+    "medium": 0,
+    "slow": 12
+   },
+   "kept": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "9",
+    "11",
+    "12",
+    "13",
+    "15",
+    "16",
+    "20"
+   ],
+   "linked": [
+    "8",
+    "10",
+    "14",
+    "17",
+    "18",
+    "19"
+   ],
+   "outlier_cells": 1,
+   "rank": {
+    "fast": [
+     "Racing Bulls",
+     "Ferrari",
+     "Audi"
+    ],
+    "slow": [
+     "Mercedes",
+     "Red Bull Racing",
+     "Ferrari"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "Azerbaijan Grand Prix",
+  "lap_notes": {},
+  "line_speed_p90": 1.0,
+  "long_runs": {
+   "basis": "race",
+   "pace_order": [
+    "Mercedes",
+    "Red Bull Racing",
+    "Ferrari",
+    "McLaren",
+    "Alpine"
+   ],
+   "stints": 39
+  },
+  "minisector_sum_error": 0.0,
+  "order": [
+   "RUS",
+   "VER",
+   "HAD",
+   "LEC",
+   "ANT"
+  ],
+  "straights": {
+   "clipping_relevant": true,
+   "flat": {
+    "Alpine": 1000.0,
+    "Aston Martin": 1080.0,
+    "Audi": 990.0,
+    "Cadillac": 820.0,
+    "Ferrari": 830.0,
+    "Haas F1 Team": 980.0,
+    "McLaren": 930.0,
+    "Mercedes": 910.0,
+    "Racing Bulls": 790.0,
+    "Red Bull Racing": 860.0,
+    "Williams": 860.0
+   },
+   "longest": 1992,
+   "top": {
+    "Alpine": 320.0,
+    "Aston Martin": 318.0,
+    "Audi": 330.0,
+    "Cadillac": 332.0,
+    "Ferrari": 329.0,
+    "Haas F1 Team": 332.0,
+    "McLaren": 325.0,
+    "Mercedes": 331.0,
+    "Racing Bulls": 329.5,
+    "Red Bull Racing": 334.0,
+    "Williams": 333.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2026-16-Qualifying": {
+  "compare_track_gap_m": 3,
+  "corners": {
+   "classes": {
+    "fast": 0,
+    "medium": 3,
+    "slow": 5
+   },
+   "kept": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "linked": [],
+   "outlier_cells": 1,
+   "rank": {
+    "medium": [
+     "Mercedes",
+     "McLaren",
+     "Ferrari"
+    ],
+    "slow": [
+     "Ferrari",
+     "McLaren",
+     "Red Bull Racing"
+    ]
+   }
+  },
+  "corners_estimated": true,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "Bahrain Grand Prix",
+  "lap_notes": {},
+  "line_speed_p90": 1.7,
+  "minisector_sum_error": 0.0,
+  "order": [
+   "VER",
+   "HAM",
+   "HAD",
+   "ANT",
+   "LEC"
+  ],
+  "quali_gaps": {
+   "Alpine": 1.346,
+   "Aston Martin": 2.197,
+   "Audi": 1.77,
+   "Cadillac": 3.659,
+   "Ferrari": 0.313,
+   "Haas F1 Team": 2.996,
+   "McLaren": 0.659,
+   "Mercedes": 0.527,
+   "Racing Bulls": 1.99,
+   "Red Bull Racing": 0.0,
+   "Williams": 2.52
+  },
+  "straights": {
+   "clipping_relevant": true,
+   "flat": {
+    "Alpine": 250.0,
+    "Aston Martin": 240.0,
+    "Audi": 220.0,
+    "Cadillac": 190.0,
+    "Ferrari": 250.0,
+    "Haas F1 Team": 250.0,
+    "McLaren": 210.0,
+    "Mercedes": 210.0,
+    "Racing Bulls": 180.0,
+    "Red Bull Racing": 220.0,
+    "Williams": 230.0
+   },
+   "longest": 856,
+   "top": {
+    "Alpine": 320.0,
+    "Aston Martin": 312.0,
+    "Audi": 318.0,
+    "Cadillac": 328.0,
+    "Ferrari": 317.0,
+    "Haas F1 Team": 320.0,
+    "McLaren": 316.0,
+    "Mercedes": 318.0,
+    "Racing Bulls": 324.0,
+    "Red Bull Racing": 321.0,
+    "Williams": 320.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2026-16-Race": {
+  "compare_track_gap_m": 35,
+  "corners": {
+   "classes": {
+    "fast": 0,
+    "medium": 2,
+    "slow": 5
+   },
+   "kept": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "linked": [],
+   "outlier_cells": 0,
+   "rank": {
+    "medium": [
+     "Ferrari",
+     "Haas F1 Team",
+     "Mercedes"
+    ],
+    "slow": [
+     "Haas F1 Team",
+     "Audi",
+     "Cadillac"
+    ]
+   }
+  },
+  "corners_estimated": true,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.01,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "Bahrain Grand Prix",
+  "lap_notes": {
+   "ANT": "lap 52 doesn't join up (part of the lap is missing); lap 53 used",
+   "BOT": "lap 7 not a racing lap; left out",
+   "HAD": "lap 52 doesn't join up (part of the lap is missing); lap 55 used",
+   "LEC": "lap 54 telemetry is cut 1194 m from where the session's fastest lap's is, so it's turned to line up with it"
+  },
+  "line_speed_p90": 15.9,
+  "long_runs": {
+   "basis": "race",
+   "pace_order": [
+    "Red Bull Racing",
+    "Mercedes",
+    "Ferrari",
+    "McLaren",
+    "Alpine"
+   ],
+   "stints": 42
+  },
+  "minisector_sum_error": 0.0,
+  "order": [
+   "VER",
+   "ANT",
+   "HAM",
+   "LEC",
+   "HAD"
+  ],
+  "straights": {
+   "clipping_relevant": true,
+   "flat": {
+    "Alpine": 150.0,
+    "Aston Martin": 240.0,
+    "Audi": 90.0,
+    "Cadillac": 230.0,
+    "Ferrari": 110.0,
+    "Haas F1 Team": 160.0,
+    "McLaren": 140.0,
+    "Mercedes": 230.0,
+    "Racing Bulls": 160.0,
+    "Red Bull Racing": 40.0,
+    "Williams": 210.0
+   },
+   "longest": 783,
+   "top": {
+    "Alpine": 305.0,
+    "Aston Martin": 296.5,
+    "Audi": 307.5,
+    "Cadillac": 309.5,
+    "Ferrari": 306.0,
+    "Haas F1 Team": 308.0,
+    "McLaren": 309.0,
+    "Mercedes": 300.0,
+    "Racing Bulls": 302.0,
+    "Red Bull Racing": 298.0,
+    "Williams": 305.0
+   }
+  },
+  "wet_share": 0.1
+ },
+ "2026-17-Practice 1": {
+  "compare_track_gap_m": 6,
+  "corners": {
+   "classes": {
+    "fast": 0,
+    "medium": 6,
+    "slow": 7
+   },
+   "kept": [
+    "1",
+    "3",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "13",
+    "14",
+    "16",
+    "18"
+   ],
+   "linked": [
+    "2",
+    "4",
+    "12",
+    "15",
+    "17",
+    "19"
+   ],
+   "outlier_cells": 3,
+   "rank": {
+    "medium": [
+     "Mercedes",
+     "McLaren",
+     "Ferrari"
+    ],
+    "slow": [
+     "Ferrari",
+     "Audi",
+     "McLaren"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "Singapore Grand Prix",
+  "lap_notes": {},
+  "line_speed_p90": 2.6,
+  "long_runs": {
+   "basis": "stint",
+   "pace_order": [
+    "McLaren",
+    "Alpine",
+    "Haas F1 Team",
+    "Williams",
+    "Cadillac"
+   ],
+   "stints": 8
+  },
+  "minisector_sum_error": 0.0,
+  "order": [
+   "RUS",
+   "LEC",
+   "NOR",
+   "HAM",
+   "PIA"
+  ],
+  "straights": {
+   "clipping_relevant": false,
+   "flat": {
+    "Alpine": 40.0,
+    "Aston Martin": 0.0,
+    "Audi": 60.0,
+    "Cadillac": 10.0,
+    "Ferrari": 70.0,
+    "Haas F1 Team": 50.0,
+    "McLaren": 0.0,
+    "Mercedes": 20.0,
+    "Racing Bulls": 40.0,
+    "Red Bull Racing": 30.0,
+    "Williams": 0.0
+   },
+   "longest": 664,
+   "top": {
+    "Alpine": 310.0,
+    "Aston Martin": 305.0,
+    "Audi": 306.0,
+    "Cadillac": 307.0,
+    "Ferrari": 307.0,
+    "Haas F1 Team": 306.0,
+    "McLaren": 308.0,
+    "Mercedes": 308.0,
+    "Racing Bulls": 308.0,
+    "Red Bull Racing": 308.0,
+    "Williams": 308.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2026-17-Qualifying": {
+  "compare_track_gap_m": 7,
+  "corners": {
+   "classes": {
+    "fast": 0,
+    "medium": 6,
+    "slow": 7
+   },
+   "kept": [
+    "1",
+    "3",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "13",
+    "14",
+    "16",
+    "18"
+   ],
+   "linked": [
+    "2",
+    "4",
+    "12",
+    "15",
+    "17",
+    "19"
+   ],
+   "outlier_cells": 0,
+   "rank": {
+    "medium": [
+     "Mercedes",
+     "Ferrari",
+     "McLaren"
+    ],
+    "slow": [
+     "Ferrari",
+     "McLaren",
+     "Audi"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.01,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "Singapore Grand Prix",
+  "lap_notes": {
+   "STR": "lap 4 measures the wrong length; lap 7 used"
+  },
+  "line_speed_p90": 3.1,
+  "minisector_sum_error": 0.0,
+  "order": [
+   "VER",
+   "LEC",
+   "HAM",
+   "ANT",
+   "NOR"
+  ],
+  "quali_gaps": {
+   "Alpine": 0.932,
+   "Aston Martin": 3.119,
+   "Audi": 1.544,
+   "Cadillac": 4.104,
+   "Ferrari": 0.059,
+   "Haas F1 Team": 1.68,
+   "McLaren": 0.371,
+   "Mercedes": 0.207,
+   "Racing Bulls": 1.035,
+   "Red Bull Racing": 0.0,
+   "Williams": 2.356
+  },
+  "straights": {
+   "clipping_relevant": false,
+   "flat": {
+    "Alpine": 0.0,
+    "Aston Martin": 40.0,
+    "Audi": 0.0,
+    "Cadillac": 60.0,
+    "Ferrari": 50.0,
+    "Haas F1 Team": 90.0,
+    "McLaren": 30.0,
+    "Mercedes": 10.0,
+    "Racing Bulls": 50.0,
+    "Red Bull Racing": 0.0,
+    "Williams": 60.0
+   },
+   "longest": 674,
+   "top": {
+    "Alpine": 309.0,
+    "Aston Martin": 306.0,
+    "Audi": 307.0,
+    "Cadillac": 306.0,
+    "Ferrari": 308.0,
+    "Haas F1 Team": 305.0,
+    "McLaren": 308.0,
+    "Mercedes": 308.0,
+    "Racing Bulls": 309.0,
+    "Red Bull Racing": 308.0,
+    "Williams": 307.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2026-17-Race": {
+  "compare_track_gap_m": 3,
+  "corners": {
+   "classes": {
+    "fast": 0,
+    "medium": 5,
+    "slow": 8
+   },
+   "kept": [
+    "1",
+    "3",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "13",
+    "14",
+    "16",
+    "18"
+   ],
+   "linked": [
+    "2",
+    "4",
+    "12",
+    "15",
+    "17",
+    "19"
+   ],
+   "outlier_cells": 1,
+   "rank": {
+    "medium": [
+     "Ferrari",
+     "Mercedes",
+     "McLaren"
+    ],
+    "slow": [
+     "Ferrari",
+     "McLaren",
+     "Red Bull Racing"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "Singapore Grand Prix",
+  "lap_notes": {},
+  "line_speed_p90": 1.4,
+  "long_runs": {
+   "basis": "race",
+   "pace_order": [
+    "Ferrari",
+    "Red Bull Racing",
+    "Mercedes",
+    "McLaren",
+    "Racing Bulls"
+   ],
+   "stints": 46
+  },
+  "minisector_sum_error": 0.0,
+  "order": [
+   "VER",
+   "LEC",
+   "ANT",
+   "NOR",
+   "PIA"
+  ],
+  "straights": {
+   "clipping_relevant": false,
+   "flat": {
+    "Alpine": 10.0,
+    "Aston Martin": 0.0,
+    "Audi": 40.0,
+    "Cadillac": 0.0,
+    "Ferrari": 70.0,
+    "Haas F1 Team": 20.0,
+    "McLaren": 0.0,
+    "Mercedes": 0.0,
+    "Racing Bulls": 0.0,
+    "Red Bull Racing": 0.0,
+    "Williams": 0.0
+   },
+   "longest": 641,
+   "top": {
+    "Alpine": 297.0,
+    "Aston Martin": 286.0,
+    "Audi": 296.0,
+    "Cadillac": 288.0,
+    "Ferrari": 292.0,
+    "Haas F1 Team": 291.0,
+    "McLaren": 296.0,
+    "Mercedes": 300.0,
+    "Racing Bulls": 294.0,
+    "Red Bull Racing": 294.0,
+    "Williams": 294.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2026-17-Sprint": {
+  "compare_track_gap_m": 4,
+  "corners": {
+   "classes": {
+    "fast": 0,
+    "medium": 2,
+    "slow": 12
+   },
+   "kept": [
+    "1",
+    "3",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "13",
+    "14",
+    "16",
+    "17",
+    "18"
+   ],
+   "linked": [
+    "2",
+    "4",
+    "12",
+    "15",
+    "19"
+   ],
+   "outlier_cells": 0,
+   "rank": {
+    "medium": [
+     "Ferrari",
+     "Mercedes",
+     "McLaren"
+    ],
+    "slow": [
+     "Ferrari",
+     "McLaren",
+     "Haas F1 Team"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "Singapore Grand Prix",
+  "lap_notes": {
+   "BOR": "lap 6 not a racing lap; left out",
+   "BOT": "lap 6 not a racing lap; left out",
+   "COL": "lap 2 not a racing lap; left out",
+   "HAD": "lap 2 not a racing lap; left out"
+  },
+  "line_speed_p90": 2.3,
+  "long_runs": {
+   "basis": "race",
+   "pace_order": [
+    "Red Bull Racing",
+    "Ferrari",
+    "Mercedes",
+    "McLaren",
+    "Racing Bulls"
+   ],
+   "stints": 15
+  },
+  "minisector_sum_error": 0.0,
+  "order": [
+   "VER",
+   "HAM",
+   "LEC",
+   "ANT",
+   "LAW"
+  ],
+  "straights": {
+   "clipping_relevant": false,
+   "flat": {
+    "Alpine": 70.0,
+    "Aston Martin": 180.0,
+    "Audi": 0.0,
+    "Ferrari": 100.0,
+    "Haas F1 Team": 50.0,
+    "McLaren": 160.0,
+    "Mercedes": 190.0,
+    "Racing Bulls": 0.0,
+    "Red Bull Racing": 190.0,
+    "Williams": 100.0
+   },
+   "longest": 580,
+   "top": {
+    "Alpine": 271.5,
+    "Aston Martin": 269.0,
+    "Audi": 278.0,
+    "Ferrari": 274.0,
+    "Haas F1 Team": 274.0,
+    "McLaren": 276.0,
+    "Mercedes": 274.5,
+    "Racing Bulls": 278.0,
+    "Red Bull Racing": 273.5,
+    "Williams": 274.0
+   }
+  },
+  "wet_share": 1.0
+ },
+ "2026-17-Sprint Qualifying": {
+  "compare_track_gap_m": 8,
+  "corners": {
+   "classes": {
+    "fast": 0,
+    "medium": 6,
+    "slow": 7
+   },
+   "kept": [
+    "1",
+    "3",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "13",
+    "14",
+    "16",
+    "18"
+   ],
+   "linked": [
+    "2",
+    "4",
+    "12",
+    "15",
+    "17",
+    "19"
+   ],
+   "outlier_cells": 2,
+   "rank": {
+    "medium": [
+     "Mercedes",
+     "Ferrari",
+     "McLaren"
+    ],
+    "slow": [
+     "Ferrari",
+     "McLaren",
+     "Mercedes"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "Singapore Grand Prix",
+  "lap_notes": {
+   "PER": "lap 5 not a racing lap; left out"
+  },
+  "line_speed_p90": 3.9,
+  "minisector_sum_error": 0.0,
+  "order": [
+   "VER",
+   "RUS",
+   "LEC",
+   "PIA",
+   "NOR"
+  ],
+  "quali_gaps": {
+   "Alpine": 2.193,
+   "Aston Martin": 2.828,
+   "Audi": 2.484,
+   "Cadillac": 6.266,
+   "Ferrari": 0.267,
+   "Haas F1 Team": 2.487,
+   "McLaren": 0.327,
+   "Mercedes": 0.132,
+   "Racing Bulls": 1.3,
+   "Red Bull Racing": 0.0,
+   "Williams": 5.457
+  },
+  "straights": {
+   "clipping_relevant": false,
+   "flat": {
+    "Alpine": 60.0,
+    "Aston Martin": 50.0,
+    "Audi": 80.0,
+    "Cadillac": 50.0,
+    "Ferrari": 70.0,
+    "Haas F1 Team": 100.0,
+    "McLaren": 60.0,
+    "Mercedes": 40.0,
+    "Racing Bulls": 0.0,
+    "Red Bull Racing": 50.0,
+    "Williams": 40.0
+   },
+   "longest": 672,
+   "top": {
+    "Alpine": 310.0,
+    "Aston Martin": 303.0,
+    "Audi": 307.0,
+    "Cadillac": 294.0,
+    "Ferrari": 306.0,
+    "Haas F1 Team": 306.0,
+    "McLaren": 307.0,
+    "Mercedes": 309.0,
+    "Racing Bulls": 308.0,
+    "Red Bull Racing": 308.0,
+    "Williams": 303.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2026-18-Practice 2": {
+  "compare_track_gap_m": 6,
+  "corners": {
+   "classes": {
+    "fast": 2,
+    "medium": 4,
+    "slow": 6
+   },
+   "kept": [
+    "1",
+    "2",
+    "5",
+    "6",
+    "7",
+    "8",
+    "11",
+    "12",
+    "13",
+    "15",
+    "19",
+    "20"
+   ],
+   "linked": [
+    "3",
+    "4",
+    "9",
+    "10",
+    "14",
+    "16",
+    "17",
+    "18"
+   ],
+   "outlier_cells": 6,
+   "rank": {
+    "fast": [
+     "Ferrari",
+     "Red Bull Racing",
+     "Aston Martin"
+    ],
+    "medium": [
+     "Ferrari",
+     "Mercedes",
+     "McLaren"
+    ],
+    "slow": [
+     "Mercedes",
+     "Ferrari",
+     "Cadillac"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "United States Grand Prix",
+  "lap_notes": {
+   "ALB": "lap 16 not a racing lap; left out"
+  },
+  "line_speed_p90": 5.1,
+  "long_runs": {
+   "basis": "stint",
+   "pace_order": [
+    "Ferrari",
+    "Red Bull Racing",
+    "Racing Bulls",
+    "Alpine",
+    "Haas F1 Team"
+   ],
+   "stints": 16
+  },
+  "minisector_sum_error": 0.0,
+  "order": [
+   "LEC",
+   "ANT",
+   "VER",
+   "HAM",
+   "RUS"
+  ],
+  "straights": {
+   "clipping_relevant": true,
+   "flat": {
+    "Alpine": 350.0,
+    "Aston Martin": 380.0,
+    "Audi": 390.0,
+    "Cadillac": 260.0,
+    "Ferrari": 370.0,
+    "Haas F1 Team": 300.0,
+    "McLaren": 340.0,
+    "Mercedes": 360.0,
+    "Racing Bulls": 340.0,
+    "Red Bull Racing": 350.0,
+    "Williams": 340.0
+   },
+   "longest": 1005,
+   "top": {
+    "Alpine": 338.0,
+    "Aston Martin": 328.0,
+    "Audi": 332.0,
+    "Cadillac": 337.0,
+    "Ferrari": 333.0,
+    "Haas F1 Team": 342.0,
+    "McLaren": 338.0,
+    "Mercedes": 339.0,
+    "Racing Bulls": 337.0,
+    "Red Bull Racing": 340.0,
+    "Williams": 335.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2026-18-Qualifying": {
+  "compare_track_gap_m": 4,
+  "corners": {
+   "classes": {
+    "fast": 3,
+    "medium": 3,
+    "slow": 6
+   },
+   "kept": [
+    "1",
+    "2",
+    "5",
+    "6",
+    "7",
+    "8",
+    "11",
+    "12",
+    "13",
+    "15",
+    "19",
+    "20"
+   ],
+   "linked": [
+    "3",
+    "4",
+    "9",
+    "10",
+    "14",
+    "16",
+    "17",
+    "18"
+   ],
+   "outlier_cells": 5,
+   "rank": {
+    "fast": [
+     "Ferrari",
+     "McLaren",
+     "Mercedes"
+    ],
+    "medium": [
+     "Ferrari",
+     "Mercedes",
+     "Red Bull Racing"
+    ],
+    "slow": [
+     "Ferrari",
+     "Mercedes",
+     "McLaren"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "United States Grand Prix",
+  "lap_notes": {},
+  "line_speed_p90": 2.7,
+  "minisector_sum_error": 0.0,
+  "order": [
+   "ANT",
+   "VER",
+   "HAD",
+   "LEC",
+   "HAM"
+  ],
+  "quali_gaps": {
+   "Alpine": 1.111,
+   "Aston Martin": 1.896,
+   "Audi": 1.194,
+   "Cadillac": 3.614,
+   "Ferrari": 0.173,
+   "Haas F1 Team": 2.123,
+   "McLaren": 0.536,
+   "Mercedes": 0.0,
+   "Racing Bulls": 0.973,
+   "Red Bull Racing": 0.19,
+   "Williams": 2.908
+  },
+  "straights": {
+   "clipping_relevant": true,
+   "flat": {
+    "Alpine": 270.0,
+    "Aston Martin": 380.0,
+    "Audi": 350.0,
+    "Cadillac": 270.0,
+    "Ferrari": 380.0,
+    "Haas F1 Team": 340.0,
+    "McLaren": 350.0,
+    "Mercedes": 330.0,
+    "Racing Bulls": 370.0,
+    "Red Bull Racing": 360.0,
+    "Williams": 370.0
+   },
+   "longest": 1002,
+   "top": {
+    "Alpine": 345.0,
+    "Aston Martin": 328.0,
+    "Audi": 337.0,
+    "Cadillac": 339.0,
+    "Ferrari": 334.0,
+    "Haas F1 Team": 337.0,
+    "McLaren": 339.0,
+    "Mercedes": 341.0,
+    "Racing Bulls": 337.0,
+    "Red Bull Racing": 339.0,
+    "Williams": 337.0
+   }
+  },
+  "wet_share": 0.0
+ },
+ "2026-18-Race": {
+  "compare_track_gap_m": 3,
+  "corners": {
+   "classes": {
+    "fast": 0,
+    "medium": 6,
+    "slow": 6
+   },
+   "kept": [
+    "1",
+    "2",
+    "5",
+    "6",
+    "7",
+    "8",
+    "11",
+    "12",
+    "13",
+    "15",
+    "19",
+    "20"
+   ],
+   "linked": [
+    "3",
+    "4",
+    "9",
+    "10",
+    "14",
+    "16",
+    "17",
+    "18"
+   ],
+   "outlier_cells": 9,
+   "rank": {
+    "medium": [
+     "Ferrari",
+     "Haas F1 Team",
+     "Mercedes"
+    ],
+    "slow": [
+     "Ferrari",
+     "Audi",
+     "Racing Bulls"
+    ]
+   }
+  },
+  "corners_estimated": false,
+  "delta_end_error": 0.0,
+  "delta_sector_error": 0.0,
+  "drs_open": false,
+  "engines": {
+   "Audi": [
+    "Audi"
+   ],
+   "Ferrari": [
+    "Cadillac",
+    "Ferrari",
+    "Haas F1 Team"
+   ],
+   "Honda": [
+    "Aston Martin"
+   ],
+   "Mercedes": [
+    "Alpine",
+    "McLaren",
+    "Mercedes",
+    "Williams"
+   ],
+   "Red Bull Ford": [
+    "Racing Bulls",
+    "Red Bull Racing"
+   ]
+  },
+  "event": "United States Grand Prix",
+  "lap_notes": {},
+  "line_speed_p90": 2.5,
+  "long_runs": {
+   "basis": "race",
+   "pace_order": [
+    "Ferrari",
+    "Red Bull Racing",
+    "Mercedes",
+    "McLaren",
+    "Racing Bulls"
+   ],
+   "stints": 51
+  },
+  "minisector_sum_error": 0.0,
+  "order": [
+   "ANT",
+   "LEC",
+   "VER",
+   "HAM",
+   "NOR"
+  ],
+  "straights": {
+   "clipping_relevant": true,
+   "flat": {
+    "Alpine": 370.0,
+    "Aston Martin": 400.0,
+    "Audi": 400.0,
+    "Cadillac": 190.0,
+    "Ferrari": 400.0,
+    "Haas F1 Team": 340.0,
+    "McLaren": 280.0,
+    "Mercedes": 380.0,
+    "Racing Bulls": 290.0,
+    "Red Bull Racing": 360.0,
+    "Williams": 220.0
+   },
+   "longest": 983,
+   "top": {
+    "Alpine": 322.0,
+    "Aston Martin": 309.0,
+    "Audi": 314.0,
+    "Cadillac": 316.0,
+    "Ferrari": 311.0,
+    "Haas F1 Team": 317.0,
+    "McLaren": 324.5,
+    "Mercedes": 323.0,
+    "Racing Bulls": 319.0,
+    "Red Bull Racing": 318.0,
+    "Williams": 323.0
+   }
+  },
+  "wet_share": 0.0
+ }
+}
