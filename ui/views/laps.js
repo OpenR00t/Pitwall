@@ -114,11 +114,14 @@ export async function render(el, ctx) {
   el.querySelector("#laptable").innerHTML = `<table class="t"><thead><tr><th class="num">Lap</th><th class="num">Time</th>
     <th class="num">S1</th><th class="num">S2</th><th class="num">S3</th><th>Tyre</th><th class="num">Age</th>
     <th class="num">Trap 1</th><th class="num">Trap 2</th><th class="num">Finish</th><th class="num">Trap</th>
-    <th class="num">Pos</th><th>Notes</th></tr></thead><tbody>${L.map((l) => {
+    <th class="num">Pos</th><th>Notes</th></tr></thead><tbody>${L.map((l, i) => {
+      // in qualifying, a heading row where each session (Q1, Q2, Q3) starts
+      const head = l.q != null && (i === 0 || L[i - 1].q !== l.q)
+        ? `<tr class="qhead"><td colspan="13">Q${l.q}</td></tr>` : "";
       const tcls = l.deleted ? "del" : l.t === best.t ? "ob" : l.t === pb ? "pb" : "";
       const notes = [l.pit_in && "In", l.pit_out && "Out", /4/.test(l.status) && "SC", /[67]/.test(l.status) && "VSC",
         /5/.test(l.status) && "Red", l.deleted && "Deleted"].filter(Boolean).join(" · ");
-      return `<tr><td class="num muted">${l.n}</td><td class="num ${tcls}">${lapTime(l.t)}</td>
+      return `${head}<tr><td class="num muted">${l.n}</td><td class="num ${tcls}">${lapTime(l.t)}</td>
         ${["s1", "s2", "s3"].map((k) => `<td class="num ${l[k] === best[k] ? "ob" : ""}">${l[k] != null ? l[k].toFixed(3) : ""}</td>`).join("")}
         <td>${l.compound ? tyre(l.compound) : ""}</td><td class="num muted">${l.life ?? ""}</td>
         <td class="num">${fixed(l.i1)}</td><td class="num">${fixed(l.i2)}</td><td class="num">${fixed(l.fl)}</td>

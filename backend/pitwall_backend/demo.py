@@ -435,20 +435,20 @@ def _qualifying(seed=11) -> SessionData:
             for run in range(runs):
                 lap_no += 1
                 rows.append(_lap_row(abbr, number, lap_no, None, t0, run + 1, "SOFT", 1, rng,
-                                     IsAccurate=False))
+                                     IsAccurate=False, QualiPart=part))
                 t0 += prof.base_time * 1.3
                 lap_no += 1
                 t = prof.base_time + 0.25 - 0.12 * part - 0.1 * run + abs(rng.normal(0, 0.12))
                 deleted = rng.random() < 0.04
                 rows.append(_lap_row(abbr, number, lap_no, t, t0, run + 1, "SOFT", 2, rng,
-                                     Deleted=deleted,
+                                     Deleted=deleted, QualiPart=part,
                                      DeletedReason="TRACK LIMITS AT TURN 9" if deleted else ""))
                 if not deleted:
                     part_best[abbr] = min(part_best.get(abbr, 99e9), t)
                 t0 += t
                 lap_no += 1
                 rows.append(_lap_row(abbr, number, lap_no, None, t0, run + 1, "SOFT", 3, rng,
-                                     IsAccurate=False))
+                                     IsAccurate=False, QualiPart=part))
                 t0 += prof.base_time * 1.4 + rng.uniform(120, 300)
         for a, t in part_best.items():
             q_times[a][f"Q{part}"] = t

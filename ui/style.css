@@ -258,3 +258,6 @@ select { -webkit-appearance: none; appearance: none; background-color: var(--bg-
 select option { background: var(--bg0); color: var(--fg1); }
 nav.tabs { scrollbar-width: none; }
 nav.tabs::-webkit-scrollbar { display: none; }
+
+/* qualifying session heading rows in the every-lap table */
+.t tr.qhead td { color: var(--green); font-weight: 700; padding-top: 10px; border-bottom: 1px solid var(--bg2); }

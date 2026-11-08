@@ -37,8 +37,14 @@ export async function render(el, ctx) {
   const offSync = series.filter((s) => s.length_off_pct != null && Math.abs(s.length_off_pct) > 1);
   const ref = series[0].abbr;
   const pickers = sel.map((a) => {
-    const opts = (laps[a] || []).filter((l) => l.t != null).map((l) =>
-      `<option value="${l.n}">L${l.n} ${lapTime(l.t)}${l.deleted ? " (deleted)" : ""}</option>`).join("");
+    const timed = (laps[a] || []).filter((l) => l.t != null);
+    const option = (l) => `<option value="${l.n}">L${l.n} ${lapTime(l.t)}${l.deleted ? " (deleted)" : ""}</option>`;
+    // qualifying laps grouped by session (Q1, Q2, Q3) so a late attempt is easy to find
+    const parts = [...new Set(timed.map((l) => l.q).filter((q) => q != null))];
+    const opts = parts.length
+      ? parts.map((q) => `<optgroup label="Q${q}">${timed.filter((l) => l.q === q).map(option).join("")}</optgroup>`).join("")
+        + timed.filter((l) => l.q == null).map(option).join("")
+      : timed.map(option).join("");
     const cur = chosen[a] ?? "fastest";
     return `<label class="row" style="gap:6px"><span style="color:${ctx.color(a)};font-weight:700">${a}</span>
       <select data-lap="${a}"><option value="fastest" ${cur === "fastest" ? "selected" : ""}>Fastest lap</option>

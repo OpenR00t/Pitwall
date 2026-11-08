@@ -150,6 +150,23 @@ def _telemetry_fn(session):
     return get
 
 
+def _tag_quali_parts(laps, session_name: str):
+    """Add QualiPart (1, 2, 3) to qualifying laps, from FastF1's own split by session."""
+    if "Qualifying" not in str(session_name) and "Shootout" not in str(session_name):
+        return laps
+    try:
+        parts = laps.split_qualifying_sessions()
+    except Exception as exc:
+        logging.getLogger("fastf1").info("could not split qualifying (%s)", exc)
+        return laps
+    laps = laps.copy()
+    laps["QualiPart"] = pd.NA
+    for n, part in enumerate(parts, 1):
+        if part is not None and len(part):
+            laps.loc[part.index, "QualiPart"] = n
+    return laps
+
+
 def load(year: int, round_: int, session_name: str,
          report: Callable[[str], None] = lambda m: None) -> SessionData:
     _require_auth()
@@ -167,6 +184,7 @@ def load(year: int, round_: int, session_name: str,
                                "(it may not have run yet).") from exc
     finally:
         log.removeHandler(handler)
+    laps = _tag_quali_parts(laps, s.name)
 
     res = s.results
     drivers = []

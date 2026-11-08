@@ -94,6 +94,7 @@ def laps(sd: SessionData) -> dict:
             "deleted": bool(r.get("Deleted")) if pd.notna(r.get("Deleted")) else False,
             "i1": num(r.get("SpeedI1"), 1), "i2": num(r.get("SpeedI2"), 1),
             "fl": num(r.get("SpeedFL"), 1), "st": num(r.get("SpeedST"), 1),
+            "q": int(r["QualiPart"]) if pd.notna(r.get("QualiPart")) else None,
         } for _, r in dl.iterrows()]
     return {"laps": out}
 
